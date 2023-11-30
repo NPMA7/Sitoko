@@ -5,8 +5,8 @@ https://sitoko.online. This Web E-Commerce For a School Project
 # Produk Kreatif
 Teknik Komputer dan Jaringan 3
 # Work Group
-- Chief  : N. Pasha Malik Alma
-- Member : Dedi Rialdi, Alfath Musyaffa, M. Aril Nasrullah, M. Lutfi Ardiansyah, M. Alif Rifaldi
+- Chief  : Dedi Rialdi
+- Member : N. Pasha Malik Alma, Alfath Musyaffa, M. Aril Nasrullah, M. Lutfi Ardiansyah, M. Alif Rifaldi
 # Task
 - Development : N. Pasha Malik && Dedi Rialdi
 - Desiner     : Alfath Musyaffa, M. Aril Nasrullah, M. Lutfi Ardiansyah, M. Alif Rifaldi 
