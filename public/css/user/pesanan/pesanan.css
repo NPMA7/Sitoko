@@ -1,0 +1,340 @@
+:root {
+  --primary :  #4b4ced
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  max-height: 100vh;
+}
+body {
+  background-color: rgb(235, 233, 233);
+  /* background-color: rgb(248, 248, 248); */
+  width: 90vw;
+}
+#topay, #dikemas, #dikirim, #selesai{
+  display: none;
+  /* display: block; */
+}
+
+#semua a,#topay a,#dikemas a, #dikirim a,#selesai a{
+  cursor:pointer;
+}
+
+#topay .belum-dibayar .pay p,
+#dikemas .dikemas p,
+#dikirim .dikirim p,
+#selesai .selesai p{
+  color: var(--primary);
+  font-weight: bold;
+  cursor:pointer;
+}
+#topay .semua p, #dikemas .semua p,
+#dikirim .semua p, #selesai .semua p{
+  color: gray;
+  cursor: pointer;
+  font-weight: 100;
+}
+
+  /* Profile */
+
+  .profile {
+    width: 30vw;
+    height: 80vh;
+    margin-left: 9vw;
+    margin-top: 10vh;
+  }
+  .isi-profile {
+    font-size: 1.2rem;
+    width: 30vw;
+    height: 80vh;
+    background-color: transparent;
+  }
+  .akun {
+    display: flex;
+    width: 30vw;
+    height: 10vh;
+  }
+  .foto-pp {
+    height: 10vh;
+  }
+  .pp {
+    border-radius: 50%;
+  }
+  .pp-akun {
+    line-height: 30px;
+    margin-top: .5em;
+    margin-left: 1vw;
+    width: 16vw;
+    height: 5em;
+  }
+  .username {
+    font-weight: bold;
+  }
+  .ubah {
+    display: flex;
+    text-decoration: none;
+    color: rgb(199, 199, 199);
+    align-items: center;
+  }
+  .ubah-profile {
+    font-size: 0.9em;
+  }
+  .rules {
+    display: none;
+  }
+  /* Setting */
+  .setting {
+    position: relative;
+    top: -20vh;
+    font-size: 1.2rem;
+  }
+  a {
+    text-decoration: none;
+  }
+  .account,
+  .pesanan,
+  .nontifikasi {
+    display: flex;
+    align-items: center;
+    height: 6vh;
+    gap: 0.4vw;
+    color: gray;
+    font-size: 1.1em;
+  }
+  .pesanan {
+    color: #4b4ced;
+    font-weight: bold;
+  }
+
+  /* Body title */
+  .body-title {
+    width: 60vw;
+    height: 10vh;
+    float: right;
+    position: relative;
+    bottom: 80vh;
+    left: 60px;
+    background-color: white;
+  }
+  .body-pesanan {
+    width: 60vw;
+    height: 70vh;
+    float: right;
+    position: relative;
+    bottom: 78vh;
+    left: 60px;
+    background-color: white;
+  }
+  .title {
+    display: flex;
+    justify-content: center;
+    gap: 6vw;
+    margin-top: 3vh;
+  }
+  .all,
+  .dibungkus,
+  .to-send,
+  .end,
+  .to-pay {
+    color: gray;
+  }
+
+  .all {
+    color: #4b4ced;
+    font-weight: bold;
+  }
+  .mobil,
+  .dollar,
+  .kardus-buka,
+  .kardus {
+    display: none;
+  }
+  /* Body Pesanan */
+  .big {
+    font-size: 6em;
+  }
+  .pesanan-kosong {
+    display: block;
+  }
+  .kosong {
+    text-align: center;
+    color: gray;
+    margin-top: 28vh;
+  }
+  .not-found {
+    text-align: center;
+    margin-top: 2vh;
+    font-size: 1.5em;
+    color: gray;
+  }
+  .account:hover {
+    transition: all s;
+    color: #4b4ced;
+    line-height-step: 10px;
+  }
+  .to-pay:hover {
+    transition: all s;
+    color: #4b4ced;
+  }
+  .to-send:hover {
+    transition: all s;
+    color: #4b4ced;
+  }
+  .dibungkus:hover {
+    transition: all s;
+    color: #4b4ced;
+  }
+  .nontifikasi:hover {
+    transition: all s;
+    color: #4b4ced;
+  }
+  .end:hover {
+    transition: all s;
+    color: #4b4ced;
+  }
+  .setting-acount{
+    display: none;
+  }
+  .ngang {
+ display: none;
+  }
+  .footer {
+    display: none;
+  }
+  .all .list{display: none;}
+  @media screen and (max-width:1028px)  {
+    body{
+      width: 100vw;
+    }
+    .navbar,.setting{
+      display: none;
+    }
+    .profile{
+      position: fixed;
+      margin: 0;
+      background-color: var(--primary);
+      height: 120px;
+      width: 100vw;
+    }
+    .isi-profile {
+      position: relative;
+      height: 90px;
+      width: 40em;
+      left: -5em;
+      top: 1em;
+    }
+    .akun{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 8em;
+      
+    }
+    .pp-akun{
+      margin-left: 20px;
+      margin-top: 30px;
+    }
+    .foto-pp img{
+      width: 80px;
+      height:80px;
+    }
+    .akun .username, .akun .ubah-profile{
+      width: 20em;
+      height: 2em;
+      font-size: 1.3rem;
+    }
+    #semua ,#topay ,#dikemas ,#dikirim ,#selesai {
+      position: relative;
+      top:98vh;
+      left: -3em;
+      margin-right: 2.5em;
+    }
+    .body-title, .body-pesanan{
+      width: 96vw;
+      font-size: .8rem;
+    }
+    .title{
+      gap: 80px;
+      position: relative;
+      top: -10px;
+      height:50px;
+      font-size: 1rem;
+    }
+    .all .list,.dollar,.kardus,.mobil,.kardus-buka
+    {
+      display: block;
+    }
+    .title i {
+      margin-left: 1em;
+    }
+  }
+  
+  @media screen and (max-width:767px)  {
+    body{
+      width: 100vw;
+    }
+    .navbar,.setting{
+      display: none;
+    }
+    .profile{
+      margin: 0;
+      background-color: var(--primary);
+      height: 120px;
+      width: 100vw;
+    }
+    .isi-profile {
+      position: relative;
+      height: 90px;
+      width: 10em;
+      left: -5em;
+      top: 1em;
+    }
+    .akun{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 8em;
+ 
+    }
+    .pp-akun{
+      margin-left: 20px;
+      margin-top: 30px;
+    }
+    .foto-pp img{
+      width: 70px;
+      height:70px;
+    }
+    .akun .username, .akun .ubah-profile{
+      width: 13em;
+      height: 2em;
+      font-size: 1rem;
+    }
+    #semua ,#topay ,#dikemas ,#dikirim ,#selesai {
+      position: relative;
+      top: 98vh;
+      left: -3em;
+      margin-right: 1.5em;
+
+    }
+    .body-title, .body-pesanan{
+      width: 93vw;
+      
+      font-size: .6rem;
+    }
+    .title{
+      gap: 25px;
+      position: relative;
+      top: -2px;
+      height:50px;
+      font-size:.9rem;
+    }
+    .all .list,.dollar,.kardus,.mobil,.kardus-buka
+    {
+      display: block;
+    }
+    .title i {
+      margin-left: 1em;
+    }
+  }

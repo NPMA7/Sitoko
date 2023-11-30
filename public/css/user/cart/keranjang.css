@@ -1,0 +1,1200 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "poppins";
+}
+body{
+    background-color: whitesmoke;
+    height: 200vh;
+  }
+ a{
+    text-decoration: none;
+    color: unset;
+ }
+@media screen and (min-width: 1028px) {
+    .navbar{
+      position: fixed;
+      margin-top: -100px;
+      background-color:white;
+        
+        width: 100vw;
+        height: 60px;
+    }
+    .navbar-body{
+        display: flex;
+        align-items: center;
+        background: linear-gradient(to right, #37b7e9cc, #4b4beda1);
+        width: 100vw;
+        height: 60px;
+    }
+    .title-logo{
+        display: flex;
+        align-items: center;
+        margin-left: 15px;
+        gap: 5px;
+    }
+    .icon-kembali{
+        color: #fff;
+        font-size: 20px;
+    }
+    .logo{
+        margin-left: 5px;
+        font-size: 20px;
+        color: #fff;
+        letter-spacing: .4px;
+    }
+    .search-box {
+        position: relative;
+        left: 28vw; 
+        margin-top: 10px;
+        width: 50vw;
+        display: flex;
+        padding: 8px 20px;
+        border-radius: 50px;
+        background: linear-gradient(to right, #37b7e9cc, #4b4beda1);
+        outline: 1px solid #4b4ced;
+        align-items: center;
+        height: 25px;
+      }
+      .search-input .input {
+        height: 25px;
+        border: none;
+        outline: none;
+        background-color: unset;
+        margin-left: 2vh;
+        padding: 1px;
+        color: #fff;
+        letter-spacing: 0.8px;
+        width: 50vw;
+        font-size: 1em;
+      }
+      .klasifikasi{
+        position: fixed;
+        outline: 1px solid #37b7e9cc;
+        margin-top: -40px;
+        width: 100vw;
+        height: 25px;
+        display: flex;
+        background-color: #fff;
+        align-items: center;
+      }
+      .title-nama-toko{
+        width: 50vw;
+        margin-left: 20px;
+      }
+      .nama-toko{
+        margin-left: 20px;
+      }
+      .harga-satuan{
+        width: 16vw;
+        margin-left: 0px;
+        text-align: center;
+      }
+      .kuantitas{
+        width: 15vw;
+        text-align: center;
+        margin-left: 200px;
+        margin-right: 100px;
+      }
+      .pesanan-produk{
+        
+        margin-top: 90px;
+    }
+    .body-pesanan-produk{
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        margin-top: 10px;
+        outline: 1px solid #37b7e9cc;
+      }
+      .img-produk-chekbock{
+        width: 50vw;
+        height: 180px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-left: 20px;
+      }
+      
+      /* .deskripsi-nama .nama{
+    
+      } */
+      .variasi{
+        width: 130px;
+        height: 21.5px;
+        margin-top: 1px;
+        border: 2px solid rgb(186, 186, 186);
+        background-color: rgb(224, 224, 224);
+        cursor: pointer;
+        font-size: .85rem;
+      }
+      .variasi .p{
+        width: 55px;
+        margin-left: 5px;
+      }
+      .variasi .type{
+        margin-top: -22px;
+        margin-left: 60px;
+      }
+      .variasi .simbol{
+        margin-top: -20px;
+        margin-left: 115px;
+      }
+      .satuan-harga{
+        width: 15vw;
+        height: 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+    }
+    .harganya{
+        font-size: 18px;
+        font-weight: bold;
+        margin-left: 0px;
+
+    }
+
+
+    .kuantitasnya{
+        cursor: pointer;
+        width: 150px;
+        height: 25px;
+        border-radius: 10px;
+        display: flex;
+      margin-left: 250px;
+      margin-right: 50px;
+    }
+    .minus{
+      cursor: pointer;
+        width: 50px;
+        height: 25px;
+        background-color: whitesmoke;
+        border-radius: 10px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        text-align: center;
+    }
+    .nomorr{
+        width: 50px;
+        height: 22px;
+        margin-top: .5px;
+        text-align: center;
+      border: 2px solid rgb(14, 14, 14);
+    }
+    .plus{
+      cursor: pointer;
+        width: 50px;
+        height: 25px;
+        background-color: whitesmoke;
+        border-radius: 10px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        text-align: center;
+    }
+    .minus:active,.plus:active{
+      background-color: #4b4ced;
+    }
+    .total-produk{
+      position: fixed;
+      bottom: 0;
+        outline: 1px solid #37b7e9cc;
+        width: 100vw;
+        height: 45px;
+        display: flex;
+        background-color: #fff;
+        align-items: center;
+    }
+    .title-total-produk{
+        width: 60vw;
+        margin-left:10px;
+    }
+    .pilihan-semua{
+      
+        display: flex;
+    }
+    .jumlah-produk{
+      margin-right: 100px;
+        display: flex;
+        width: 20em;
+    }
+    #jumlah-produknya{
+        color: gray;
+    }
+    #harganya-semua{
+      
+        color: gray;
+    }
+    .beli-sekarang{
+        margin-right: 35px;
+        width: 200px;
+        background-color: #4b4ced;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 40px;
+        color: white;
+    }
+
+    /* Rekomendasi Digunakan Jika Perlu */
+  .rekomendasi{
+    width: 98vw;
+    height: 60px;
+    font-size: 1.5em;
+    color: #4b4ced;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 2vh;
+    margin-left: 1vw;
+    }
+    .ttl{
+    margin-top: 2vh;
+    }
+    /* .line{
+    width: 100%;
+    height: 4px;
+    outline: 1px solid #4b4ced;
+    margin-top: 2vh;
+    background-color: #4b4ced;
+    } */
+    .sale{
+    width: 100vw;
+    margin-bottom: 50px;
+    }
+    .barang {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px 10px;
+    margin: 0;
+    }
+    .produk{
+    border-radius: 5px;
+    width: 170px;
+    height: 310px;
+    background-color: white;
+    box-shadow: 1px 1px 2px #888; 
+    }
+    .img-sale{
+    width:100%;
+    height: 60%;
+    }
+    .deksripsi{
+    color: #333;
+    margin-left: 1.3vw;
+    font-size: 1.2em;
+    }
+    .harga{
+    margin-left: 1.3vw;
+    color: #4b4ced;
+    font-size: 1.3em;
+    }
+    /* Rekomendasi Digunakan jika perlu */
+    }
+
+    @media screen and (max-width: 1027px)  {
+      .navbar{
+        position: fixed;
+        margin-top: -100px;
+        background-color:white;
+          
+          width: 100vw;
+          height: 60px;
+      }
+      .navbar-body{
+          display: flex;
+          align-items: center;
+          background: linear-gradient(to right, #37b7e9cc, #4b4beda1);
+          width: 100vw;
+          height: 60px;
+      }
+      .title-logo{
+          display: flex;
+          align-items: center;
+          margin-left: 15px;
+          gap: 5px;
+      }
+      .icon-kembali{
+          color: #fff;
+          font-size: 20px;
+      }
+      .logo{
+          margin-left: 5px;
+          font-size: 20px;
+          color: #fff;
+          letter-spacing: .4px;
+      }
+      .search-box {
+          position: relative;
+          left: 28vw; 
+          margin-top: 0px;
+          width: 40vw;
+          display: flex;
+          padding: 8px 20px;
+          border-radius: 50px;
+          background: linear-gradient(to right, #37b7e9cc, #4b4beda1);
+          outline: 1px solid #4b4ced;
+          align-items: center;
+          height: 25px;
+        }
+        .search-input .input {
+          height: 25px;
+          border: none;
+          outline: none;
+          background-color: unset;
+          margin-left: 2vh;
+          padding: 1px;
+          color: #fff;
+          letter-spacing: 0.8px;
+          width: 50vw;
+          font-size: 1em;
+        }
+        .klasifikasi{
+          position: fixed;
+          outline: 1px solid #37b7e9cc;
+          margin-top: -40px;
+          width: 100vw;
+          height: 25px;
+          display: flex;
+          background-color: #fff;
+          align-items: center;
+        }
+              .title-nama-toko{
+                width: 40vw;
+                margin-left: 20px;
+              }
+              .nama-toko{
+                margin-left: 20px;
+              }
+              .harga-satuan {
+                width: 16vw;
+                margin-left: 0px;
+                text-align: center;
+              }
+   
+              .kuantitas{
+                width: 15vw;
+                margin-left: 150px;
+                margin-right: 50px;
+                text-align: center;
+              }
+              .pesanan-produk{
+                width: 90vw;
+             
+              }
+            .body-pesanan-produk{
+                width: 98vw;
+                display: flex;
+                align-items: center;
+                background-color: #fff;
+                margin-top: 100px;
+                outline: 1px solid #37b7e9cc;
+              }
+              .img-produk-chekbock{
+                width: 40vw;
+                height: 180px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-left: 20px;
+              }
+              .img-produk-chekbock img{
+                width: 110px;
+                height: 110px;
+              }
+              .deskripsi-nama{
+                height: 180px;
+                margin-top: 100px;
+                font-size: 14px;
+              }
+
+              .variasi{
+                width: 130px;
+                height: 21.5px;
+                margin-top: 1px;
+                border: 2px solid rgb(186, 186, 186);
+                background-color: rgb(224, 224, 224);
+                cursor: pointer;
+                font-size: .85rem;
+              }
+              .variasi .p{
+                width: 55px;
+                margin-left: 5px;
+              }
+              .variasi .type{
+                margin-top: -22px;
+                margin-left: 60px;
+              }
+              .variasi .simbol{
+                margin-top: -20px;
+                margin-left: 115px;
+              }
+              .satuan-harga{
+                width: 15vw;
+                height: 100px;
+                display: flex;
+                align-items: center;
+                margin-left: 30px;
+            }
+            .satuan-harga p{
+                font-size: 18px;
+                font-weight: bold;
+                
+            }
+            .kuantias{
+              height: 100px;
+              display: flex;
+              margin-left: 120px;
+              margin-right: 50px;
+              align-items: center   ;
+            }
+    .kuantitasnya{
+      cursor: pointer;
+      width: 15vw;
+      height: 25px;
+      border-radius: 10px;
+      display: flex;
+
+  }
+  .minus{
+    cursor: pointer;
+      width: 50px;
+      height: 25px;
+      background-color: whitesmoke;
+      border-radius: 10px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      text-align: center;
+  }
+  .nomorr{
+      width: 50px;
+      height: 21.5px;
+      margin-top: 1px;
+      text-align: center;
+    border: 2px solid rgb(14, 14, 14);
+  }
+  .plus{
+    cursor: pointer;
+      width: 50px;
+      height: 25px;
+      background-color: whitesmoke;
+      border-radius: 10px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      text-align: center;
+  }
+  .total-produk{
+    position: fixed;
+    bottom: 0;
+      outline: 1px solid #37b7e9cc;
+      width: 100vw;
+      height: 45px;
+      display: flex;
+      background-color: #fff;
+      align-items: center;
+      
+  }  .minus:active,.plus:active{
+    background-color: #4b4ced;
+  }
+            .title-total-produk{
+                width: 60vw;
+                margin-left: 10px;
+            }
+            .pilihan-semua{
+                display: flex;
+            }
+            .jumlah-produk{
+                display: flex;
+                margin-left: -100px;
+                width: 300px;
+            }
+            #jumlah-produknya{
+                color: gray;
+            }
+            #harganya-semua{
+                color: gray;
+                
+            }
+            .beli-sekarang{
+                margin-right: 40px;
+                width: 200px;
+                background-color: #4b4ced;
+                height: 35px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 40px;
+                color: white;
+            }
+        
+            /* Rekomendasi Digunakan Jika Perlu */
+          .rekomendasi{
+            width: 98vw;
+            height: 60px;
+            font-size: 1.5em;
+            color: #4b4ced;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 5px;
+            margin-top: 10px;
+            margin-bottom: 2vh;
+            margin-left: 1vw;
+            }
+            .ttl{
+            margin-top: 2vh;
+            }
+            /* .line{
+            width: 100%;
+            height: 4px;
+            outline: 1px solid #4b4ced;
+            margin-top: 2vh;
+            background-color: #4b4ced;
+            } */
+            .sale{
+            width: 100vw;
+            margin-bottom: 50px;
+            }
+            .barang {
+            width: 100vw;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            gap: 10px 10px;
+            margin: 0;
+            }
+            .produk{
+            border-radius: 5px;
+            width: 170px;
+            height: 310px;
+            background-color: white;
+            box-shadow: 1px 1px 2px #888; 
+            }
+            .img-sale{
+            width:100%;
+            height: 60%;
+            }
+            .deksripsi{
+            color: #333;
+            margin-left: 1.3vw;
+            font-size: 1.2em;
+            }
+            .harga{
+            margin-left: 1.3vw;
+            color: #4b4ced;
+            font-size: 1.3em;
+            }
+            /* Rekomendasi Digunakan jika perlu */
+    }
+
+    @media screen and (max-width: 767px) {
+        .navbar{
+           background-color: white;
+            width: 100vw;
+            height: 60px;
+            margin-top:  -100px;
+        }
+        .navbar-body{
+          background: linear-gradient(to right, #37b7e9cc, #4b4beda1);
+            display: flex;
+            align-items: center;
+        }
+        .title-logo{
+            height: 60px;
+            display: flex;
+            align-items: center;
+            margin-left: 15px;
+            gap: 10px;
+        }
+        .icon-kembali{
+            color: #fff;
+            font-size: 16px;
+        }
+        .logo{
+            font-size: 16px;
+            color: #fff;
+            letter-spacing: .4px;
+        }
+        .search-box {
+            position: relative;
+            left: 15vw; 
+            width: 40vw;
+            display: flex;
+            padding: 8px 20px;
+            border-radius: 50px;
+            background: linear-gradient(to right, #37b7e9cc, #4b4beda1);
+            outline: 1px solid #4b4ced;
+            align-items: center;
+            height: 25px;
+          }
+          .search-input .input {
+            height: 25px;
+            border: none;
+            outline: none;
+            background-color: unset;
+            margin-left: 2vh;
+            padding: 1px;
+            color: #fff;
+            letter-spacing: 0.8px;
+            width: 40vw;
+            font-size: 1em;
+          }
+          .klasifikasi{
+            outline: 1px solid #37b7e9cc;
+            margin-top: -40px;
+            width: 100vw;
+            height: 25px;
+            display: flex;
+            background-color: #fff;
+            align-items: center;
+            font-size: 12px;
+          }
+          .title-nama-toko{
+            width: 30vw;
+            margin-left: 10px;
+          }
+          .nama-toko{
+            margin-left: 10px;
+          }
+          .harga-satuan{
+            margin-left: 80px;
+          } 
+          .harga-satuan {
+            width: 25vw;
+          
+            text-align: center;
+          }
+          .kuantitas{margin-left: 40px;
+            width: 10vw;
+            text-align: center;
+          }
+          .pesanan-produk{
+            width: 80vw;
+            height: 150px;
+            margin-top: 100px;
+            background-color: #333;
+        }
+        .body-pesanan-produk{
+            width: 96.6vw;
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            margin-top: 10px;
+            outline: 1px solid #37b7e9cc;
+          }
+          .img-produk-chekbock{
+            width: 45vw;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-left: 10px;
+          }
+          .img-produk-chekbock img{
+            width: 80px;
+            height: 80px;
+          }
+          .deskripsi-nama{
+            height: 110px;
+            margin-top: 50px;
+            font-size: 12px;
+          }
+          .ini-produknya{
+            border-radius: 10px;
+            width: 60px;
+            height: 60px;
+          } .variasi{
+            font-size: 12px;
+            width: 120px;
+            height: 21.5px;
+            margin-top: 1px;
+            border: 2px solid rgb(186, 186, 186);
+            background-color: rgb(224, 224, 224);
+            cursor: pointer;
+          }
+          .variasi .p{
+            width: 55px;
+            margin-left: 5px;
+          }
+          .variasi .type{
+            margin-top: -19px;
+            margin-left: 60px;
+          }
+          .variasi .simbol{
+            margin-top: -17px;
+            margin-left: 105px;
+          }
+          .satuan-harga, .harga-totalan{
+            width: 15vw;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+      
+        }.satuan-harga p, .harga-totalan p{
+          font-size: 14px;
+          margin-left: 0px;
+        }
+
+        .kuantitasnya{
+            width: 70px;
+            height: 25px;
+            border-radius: 10px;
+            display: flex;
+            margin-left: -60px;
+        }
+        .minus{
+            width: 25px;
+            height: 25px;
+            background-color: whitesmoke;
+            border-radius: 10px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .nomorr{
+            width: 50px;
+            height: 23px;
+            display: flex;
+            align-items: center;
+            border: 1px solid rgb(0, 0, 0);
+            justify-content: center;
+            margin-top: -.3px;
+        }
+        .plus{
+            width: 25px;
+            height: 25px;
+            background-color: whitesmoke;
+            border-radius: 10px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .minus:active,.plus:active{
+          background-color: #4b4ced;
+        }
+        .total-produk{
+            outline: 1px solid #37b7e9cc;
+            margin-top: 10px;
+            width: 100vw;
+            height: 45px;
+            display: flex;
+            background-color: #fff;
+            align-items: center;
+            font-size: 12px;
+        }
+        .title-total-produk{
+            width: 29vw;
+            margin-left: 10px;
+        }
+        .pilihan-semua{
+            display: flex;
+        }
+        .jumlah-produk{
+          position: fixed;
+            display: flex;
+            width: 160px;
+            margin-left: 40vw;
+        }
+        #jumlah-produknya{
+            color: gray;
+        }
+        #harganya-semua{
+            color: gray;
+        }
+        .beli-sekarang{
+          position: fixed;
+          left: 75vw;
+            width: 100px;
+          margin-right: 50px;
+            background-color: #4b4ced;
+            height: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 40px;
+            color: white;
+        
+        }
+    
+        /* Rekomendasi Digunakan Jika Perlu */
+      .rekomendasi{
+        width: 98vw;
+        height: 60px;
+        font-size: 1.5em;
+        color: #4b4ced;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: #fff;
+        border-radius: 5px;
+        margin-top: 10px;
+        margin-bottom: 2vh;
+        margin-left: 1vw;
+        }
+        .ttl{
+        margin-top: 2vh;
+        }
+        /* .line{
+        width: 100%;
+        height: 4px;
+        outline: 1px solid #4b4ced;
+        margin-top: 2vh;
+        background-color: #4b4ced;
+        } */
+        .sale{
+        width: 100vw;
+        margin-bottom: 50px;
+        }
+        .barang {
+        width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px 10px;
+        margin: 0;
+        }
+        .produk{
+        border-radius: 5px;
+        width: 170px;
+        height: 310px;
+        background-color: white;
+        box-shadow: 1px 1px 2px #888; 
+        }
+        .img-sale{
+        width:100%;
+        height: 60%;
+        }
+        .deksripsi{
+        color: #333;
+        margin-left: 1.3vw;
+        font-size: 1.2em;
+        }
+        .harga{
+        margin-left: 1.3vw;
+        color: #4b4ced;
+        font-size: 1.3em;
+        }
+        /* Rekomendasi Digunakan jika perlu */
+}
+
+
+@media screen and (max-width: 440px) {
+  .navbar{
+     background-color: white;
+      width: 100vw;
+      height: 60px;
+      margin-top:  -100px;
+  }
+  .navbar-body{
+    background: linear-gradient(to right, #37b7e9cc, #4b4beda1);
+      display: flex;
+      align-items: center;
+  }
+  .title-logo{
+      height: 60px;
+      display: flex;
+      align-items: center;
+      margin-left: 15px;
+      gap: 10px;
+  }
+  .icon-kembali{
+      color: #fff;
+      font-size: 16px;
+  }
+  .logo{
+      font-size: 16px;
+      color: #fff;
+      letter-spacing: .4px;
+  }
+  .search-box {
+      position: relative;
+      left: 15vw; 
+      width: 40vw;
+      display: flex;
+      padding: 8px 20px;
+      border-radius: 50px;
+      background: linear-gradient(to right, #37b7e9cc, #4b4beda1);
+      outline: 1px solid #4b4ced;
+      align-items: center;
+      height: 25px;
+    }
+    .search-input .input {
+      height: 25px;
+      border: none;
+      outline: none;
+      background-color: unset;
+      margin-left: 2vh;
+      padding: 1px;
+      color: #fff;
+      letter-spacing: 0.8px;
+      width: 40vw;
+      font-size: 1em;
+    }
+    .klasifikasi{
+      outline: 1px solid #37b7e9cc;
+      margin-top: -40px;
+      width: 100vw;
+      height: 30px;
+      display: flex;
+      background-color: #fff;
+      align-items: center;
+      font-size: 14px;
+    }
+    .title-nama-toko{
+      width: 50vw;
+      margin-left: 10px;
+    }
+    .nama-toko{
+      margin-left: 10px;
+    }
+    .harga-satuan{
+      margin-left: 80px;
+    } 
+    .harga-satuan {
+      position: fixed;
+      width: 30vw;
+  right: 10px;
+      text-align: center;
+    }
+    .kuantitas{margin-left: 40px;
+      width: 10vw;
+      display: none;
+      text-align: center;
+    }
+    .pesanan-produk{
+      width: 80vw;
+      height: 150px;
+      margin-top: 100px;
+      background-color: #333;
+  }
+  .body-pesanan-produk{
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      background-color: #fff;
+      margin-top: 10px;
+      outline: 1px solid #37b7e9cc;
+    }
+    .img-produk-chekbock{
+      width: 45vw;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-left: 10px;
+    }
+    .img-produk-chekbock img{
+      width: 80px;
+      height: 80px;
+    }
+    .deskripsi-nama{
+      height: 110px;
+      margin-top: 50px;
+      font-size: 12px;
+    }
+    .ini-produknya{
+      border-radius: 10px;
+      width: 60px;
+      height: 60px;
+    } .variasi{
+      font-size: 12px;
+      width: 120px;
+      height: 21.5px;
+      margin-top: 1px;
+      border: 2px solid rgb(186, 186, 186);
+      background-color: rgb(224, 224, 224);
+      cursor: pointer;
+    }
+    .variasi .p{
+      width: 55px;
+      margin-left: 5px;
+    }
+    .variasi .type{
+      margin-top: -19px;
+      margin-left: 60px;
+    }
+    .variasi .simbol{
+      margin-top: -17px;
+      margin-left: 105px;
+    }
+    .satuan-harga{
+      width: 15vw;
+      height: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 12px;
+      margin-left: 100px;
+      
+  }.satuan-harga p{
+    font-size: 14px;
+    margin-left: 0px;
+  }
+
+  .kuantias{
+      width: 70px;
+      height: 25px;
+      border-radius: 10px;
+      display: flex;
+      margin-top: 100px;
+      margin-left: 10px;
+  }
+  .minus{
+      width: 30px;
+      height: 30px;
+      background-color: whitesmoke;
+      border-radius: 10px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      display: flex;
+      margin-left: -15px;
+      align-items: center;
+      justify-content: center;
+  }
+  .nomorr{
+      width: 50px;
+      height: 26px;
+      display: flex;
+      align-items: center;
+      border: 1px solid rgb(0, 0, 0);
+      justify-content: center;
+      margin-top: 1px;
+  }
+  .plus{
+      width: 30px;
+      height: 30px;
+      background-color: whitesmoke;
+      border-radius: 10px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .minus:active,.plus:active{
+    background-color: #4b4ced;
+  }
+  .total-produk{
+      outline: 1px solid #37b7e9cc;
+      margin-top: 10px;
+      width: 100vw;
+      height: 70px;
+      display: flex;
+      background-color: #fff;
+      align-items: center;
+   
+  }
+  .title-total-produk{
+      width: 30vw;
+      font-size: 14px;
+      margin-top: -30px;
+      margin-left: 10px;
+  }
+
+  .jumlah-produk{
+    font-size: 14px;
+    position: fixed;
+     bottom: 10px;
+     left: -150px;
+      width: 600px;
+      margin-left: 40vw;
+  }
+  #jumlah-produknya{
+
+      color: gray;
+  }
+  #harganya-semua{
+      color: gray;
+  }
+  .beli-sekarang{
+    position: fixed;
+    left: 73vw;bottom: 20px;
+      width: 100px;
+    margin-right: 50px;
+      background-color: #4b4ced;
+      height: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 40px;
+      color: white;
+  
+  }
+
+  /* Rekomendasi Digunakan Jika Perlu */
+.rekomendasi{
+  width: 98vw;
+  height: 60px;
+  font-size: 1.5em;
+  color: #4b4ced;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 2vh;
+  margin-left: 1vw;
+  }
+  .ttl{
+  margin-top: 2vh;
+  }
+  /* .line{
+  width: 100%;
+  height: 4px;
+  outline: 1px solid #4b4ced;
+  margin-top: 2vh;
+  background-color: #4b4ced;
+  } */
+  .sale{
+  width: 100vw;
+  margin-bottom: 50px;
+  }
+  .barang {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px 10px;
+  margin: 0;
+  }
+  .produk{
+  border-radius: 5px;
+  width: 170px;
+  height: 310px;
+  background-color: white;
+  box-shadow: 1px 1px 2px #888; 
+  }
+  .img-sale{
+  width:100%;
+  height: 60%;
+  }
+  .deksripsi{
+  color: #333;
+  margin-left: 1.3vw;
+  font-size: 1.2em;
+  }
+  .harga{
+  margin-left: 1.3vw;
+  color: #4b4ced;
+  font-size: 1.3em;
+  }
+  /* Rekomendasi Digunakan jika perlu */
+}

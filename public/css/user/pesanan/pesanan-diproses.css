@@ -1,0 +1,339 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "poppins";
+}
+body{
+  width: 80vw;
+    background-color: whitesmoke;
+}
+a{ 
+    color: unset;
+    text-decoration: none;
+}
+@media screen and (min-width: 1028px) {
+    .pesanan-diproses{
+      position: relative;
+        width: 122.5%;
+        height: 500px;
+        background:linear-gradient(to right, #37b7e9cc, #4b4beda1);
+    }
+    .bodynya{
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+    }
+    .pack{
+        font-size: 5em;
+    }
+    .deskripsinya{
+        text-align: center;
+        color: white;
+    }
+    .rekomendasi{
+        width: 122.5%;
+        height: 60px;
+        font-size: 1.5em;
+        color: #4b4ced;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: #fff;
+        border-radius: 5px;
+        margin: 0;
+        }
+        .line{
+        width: 100%;
+        height: 4px;
+        outline: 1px solid #4b4ced;
+        margin-top: 2vh;
+        background-color: #4b4ced;
+        }
+    .sale{
+        margin-top: 10px;
+        width: 122.5%;
+        margin-bottom: 50px;
+        }
+        .barang {
+        width: 98vw;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        height: auto;
+        gap: 10px 10px;
+        margin: 0;
+        }
+        .produk{
+        border-radius: 5px;
+        width: 170px;
+        height: 310px;
+        background-color: white;
+        box-shadow: 1px 1px 2px #888; 
+        }
+        .img-sale{
+        width:100%;
+        height: 60%;
+        }
+        .deksripsi{
+        color: #333;
+        margin-left: 1.3vw;
+        font-size: 1.2em;
+        }
+        .harga{
+        margin-left: 1.3vw;
+        color: #4b4ced;
+        font-size: 1.3em;
+        }
+        .produk:hover{
+          cursor: pointer;
+        }
+      
+}
+@media screen and (max-width: 1028px){
+    .pesanan-diproses{
+        width: 122.5%;
+        height: 500px;
+        background:linear-gradient(to right, #37b7e9cc, #4b4beda1);
+    }
+    .bodynya{
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+    }
+    .pack{
+        font-size: 5em;
+    }
+    .deskripsinya{
+        text-align: center;
+        color: white;
+    }
+    .rekomendasi{
+        width: 122.5%;
+        height: 60px;
+        font-size: 1.5em;
+        color: #4b4ced;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: #fff;
+        border-radius: 5px;
+        margin: 0;
+        }
+        .line{
+        width: 100%;
+        height: 4px;
+        outline: 1px solid #4b4ced;
+        margin-top: 2vh;
+        background-color: #4b4ced;
+        }
+    .sale{
+        margin-top: 35px;
+        width: 80vw;
+        margin-bottom: 50px;
+        }
+        .barang {
+        width: 122.5%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        height: auto;
+        gap: 10px 10px;
+        margin: 0;
+        }
+        .produk{
+        border-radius: 5px;
+        width: 170px;
+        height: 310px;
+        background-color: white;
+        box-shadow: 1px 1px 2px #888; 
+        }
+        .img-sale{
+        width:100%;
+        height: 60%;
+        }
+        .deksripsi{
+        color: #333;
+        margin-left: 1.3vw;
+        font-size: 1.2em;
+        }
+        .harga{
+        margin-left: 1.3vw;
+        color: #4b4ced;
+        font-size: 1.3em;
+        }
+        .produk:hover{
+          cursor: pointer;
+        }
+
+      
+}
+@media screen and (max-width:767px) {
+    .pesanan-diproses{
+        width: 121.9%;
+        height: 300px;
+        background:linear-gradient(to right, #37b7e9cc, #4b4beda1);
+    }
+    .bodynya{
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+    }
+    .pack{
+        font-size: 5em;
+    }
+    .deskripsinya{
+        text-align: center;
+        color: white;
+    }
+    .rekomendasi{
+        width: 121.9%;
+        height: 60px;
+        font-size: 1.5em;
+        color: #4b4ced;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: #fff;
+        border-radius: 5px;
+        margin: 0;
+        }
+        .line{
+        width: 100%;
+        height: 4px;
+        outline: 1px solid #4b4ced;
+        margin-top: 2vh;
+        background-color: #4b4ced;
+        }
+    .sale{
+        margin-top: 35px;
+        width: 80vw;
+        margin-bottom: 50px;
+        }
+        .barang {
+        width: 121.9%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        height: auto;
+        gap: 10px 10px;
+        margin: 0;
+        }
+        .produk{
+        border-radius: 5px;
+        width: 170px;
+        height: 310px;
+        background-color: white;
+        box-shadow: 1px 1px 2px #888; 
+        }
+        .img-sale{
+        width:100%;
+        height: 60%;
+        }
+        .deksripsi{
+        color: #333;
+        margin-left: 1.3vw;
+        font-size: 1.2em;
+        }
+        .harga{
+        margin-left: 1.3vw;
+        color: #4b4ced;
+        font-size: 1.3em;
+        }
+        .produk:hover{
+          cursor: pointer;
+        }
+        .navbar{
+            display: none
+        }
+
+}
+
+@media screen and (max-width:500px) {
+  .pesanan-diproses{
+      width: 120.8%;
+      height: 300px;
+      background:linear-gradient(to right, #37b7e9cc, #4b4beda1);
+  }
+  .bodynya{
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+  }
+  .pack{
+      font-size: 5em;
+  }
+  .deskripsinya{
+      text-align: center;
+      color: white;
+  }
+  .rekomendasi{
+      width: 120.8%;
+      height: 60px;
+      font-size: 1.5em;
+      color: #4b4ced;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      background-color: #fff;
+      border-radius: 5px;
+      margin: 0;
+      }
+      .line{
+      width: 100%;
+      height: 4px;
+      outline: 1px solid #4b4ced;
+      margin-top: 2vh;
+      background-color: #4b4ced;
+      }
+  .sale{
+      margin-top: 35px;
+      width: 80vw;
+      margin-bottom: 50px;
+      }
+      .barang {
+      width: 120.8%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      height: auto;
+      gap: 10px 10px;
+      margin: 0;
+      }
+      .produk{
+      border-radius: 5px;
+      width: 170px;
+      height: 310px;
+      background-color: white;
+      box-shadow: 1px 1px 2px #888; 
+      }
+      .img-sale{
+      width:100%;
+      height: 60%;
+      }
+      .deksripsi{
+      color: #333;
+      margin-left: 1.3vw;
+      font-size: 1.2em;
+      }
+      .harga{
+      margin-left: 1.3vw;
+      color: #4b4ced;
+      font-size: 1.3em;
+      }
+      .produk:hover{
+        cursor: pointer;
+        
+      }
+}

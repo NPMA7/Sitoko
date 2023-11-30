@@ -1,0 +1,724 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins";
+}
+body {
+  height: 100vh;
+  width: 80vw;
+  background-color: rgba(222, 222, 222, 0.696);
+}
+@media screen and (min-width: 1028px) {
+  .navbar-belilangsung {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: #4b4ced;
+    font-weight: bold;
+  }
+  .icon-kembali-co {
+    margin-left: 2vw;
+    color: #4b4ced;
+  }
+  .title-checkout {
+    margin-left: 20px;
+  }
+  .lokasi-penerima {
+    width: 96vw;
+    margin-left: 1.5vw;
+    margin-right: 1vw;
+    margin-top: 70px;
+    height: 150px;
+    background-color: white;
+  }
+  .isi-lokasi {
+    width: 600px;
+    height: 150px;
+    margin-left: 20px;
+  }
+  .tile-lokasi {
+    gap: 5px;
+    font-size: 20px;
+    color: #4b4ced;
+    font-weight: bold;
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+  .nama-telepon {
+    display: flex;
+    gap: 5px;
+  }
+  .alamat {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+  }
+  .jalan-RT-RW {
+    display: flex;
+  }
+  .ini-produknya {
+    width: 96vw;
+    margin-left: 1.5vw;
+    margin-right: 1vw;
+    height: 200px;
+    background-color: white;
+    margin-top: 10px;
+  }
+  .isinya {
+    display: flex;
+    align-items: center;
+    height: 200px;
+    margin-left: 10px;
+    width: 600px;
+    font-size: 18px;
+  }
+  #gambar-produk {
+    width: 150px;
+    height: 150px;
+  }
+  #nama-produk {
+    font-size: 18px;
+    color: #4b4ced;
+    font-weight: bold;
+  }
+  .harga-nya {
+    display: flex;
+    gap: 5px;
+  }
+  #harga-asli {
+    color: #4b4ced;
+  }
+  .list-metode-pembayaran {
+    width: 96vw;
+    margin-left: 1.5vw;
+    margin-right: 1vw;
+    height: 40px;
+    background-color: white;
+    margin-top: 10px;
+  }
+  .isi-list {
+    margin-left: 10px;
+
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  .jenisnyaa {
+    margin-right: 50vw;
+  }
+  .cod,
+  .paypal,
+  .gopay,
+  .dana {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 30px;
+    gap: 5px;
+  }
+  .cod:hover {
+    cursor: pointer;
+    border-radius: 6px;
+    outline: 1px solid #4b4ced;
+    width: 100px;
+    height: 30px;
+    color: #4b4ced;
+  }
+  .paypal:hover {
+    cursor: pointer;
+    border-radius: 6px;
+    outline: 1px solid #4b4ced;
+    width: 100px;
+    height: 30px;
+    color: #4b4ced;
+  }
+  .gopay:hover {
+    cursor: pointer;
+    border-radius: 6px;
+    outline: 1px solid #4b4ced;
+    width: 100px;
+    height: 30px;
+    color: #4b4ced;
+  }
+  .dana:hover {
+    cursor: pointer;
+    border-radius: 6px;
+    outline: 1px solid #4b4ced;
+    width: 100px;
+    height: 30px;
+    color: #4b4ced;
+  }
+  .metode-pembayaran {
+    position: fixed;
+    width: 100vw;
+    height: 40px;
+    left: 0;
+    background-color: white;
+    bottom: 65px;
+  }
+  .isi-metode {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    gap: 5px;
+  }
+  #COD {
+    margin-left: 60vw;
+    color: gray;
+  }
+  .jasa-pengiriman {
+    margin-top: 10px;
+    width: 96vw;
+    margin-left: 1.5vw;
+    margin-right: 1vw;
+    height: 100px;
+    background-color: white;
+  }
+  .title-jasa-pengiriman {
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .body-jasa-pengiriman {
+    margin-left: 10px;
+  }
+  .harga-ongkir {
+    display: flex;
+    gap: 5px;
+    margin-left: 18px;
+  }
+  .total-pesanan {
+   
+    position: fixed;
+    background-color: rgb(254, 254, 254);
+    width: 100vw;
+    margin-left: -1.5vw;
+    margin-right: 1vw;
+    height: 60px;
+    bottom: 0px;
+  }
+  .body-total-pesanan {
+    margin-top: 15px;
+    margin-left: 10px;
+    display: flex;
+    font-weight: bold;
+  }
+  #jumlah-total-pesanan {
+    font-weight: normal;
+    color: gray;
+  }
+  .harga-totalnya {
+    display: flex;
+    margin-left: 60vw;
+    align-items: center;
+    gap: 5px;
+  }
+  .jumlah-semuanya {
+    color: #4b4ced;
+  }
+  .beli-sekarangnya {
+    width: 10vw;
+    height: 45px;
+    background-color: #4b4ced;
+    color: white;
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    font-weight: normal;
+  }
+}
+
+
+@media screen and (max-width: 1027px) {
+  body{
+    height: 110vh;
+  }
+  .navbar-belilangsung {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: #4b4ced;
+    font-weight: bold;
+  }
+  .icon-kembali-co {
+    margin-left: 2vw;
+    color: #4b4ced;
+  }
+  .title-checkout {
+    margin-left: 20px;
+  }
+  .lokasi-penerima {
+    width: 96vw;
+    margin-left: 1.5vw;
+    margin-right: 1vw;
+    margin-top: 90px;
+    height: 150px;
+    background-color: white;
+  }
+  .isi-lokasi {
+    width: 600px;
+    height: 150px;
+    margin-left: 20px;
+  }
+  .tile-lokasi {
+    gap: 5px;
+    font-size: 20px;
+    color: #4b4ced;
+    font-weight: bold;
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+  .nama-telepon {
+    display: flex;
+    gap: 5px;
+  }
+  .alamat {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+  }
+  .jalan-RT-RW {
+    display: flex;
+  }
+  .ini-produknya {
+    width: 96vw;
+    margin-left: 1.5vw;
+    margin-right: 1vw;
+    height: 200px;
+    background-color: white;
+    margin-top: 10px;
+  }
+  .isinya {
+    display: flex;
+    align-items: center;
+    height: 200px;
+    margin-left: 10px;
+    width: 600px;
+    font-size: 18px;
+  }
+  #gambar-produk {
+    width: 150px;
+    height: 150px;
+  }
+  #nama-produk {
+    font-size: 18px;
+    color: #4b4ced;
+    font-weight: bold;
+  }
+  .harga-nya {
+    display: flex;
+    gap: 5px;
+  }
+  #harga-asli {
+    color: #4b4ced;
+  }
+  .list-metode-pembayaran {
+    width: 96vw;
+    margin-left: 1.5vw;
+    margin-right: 1vw;
+    height: 40px;
+    background-color: white;
+    margin-top: 10px;
+  }
+  .isi-list {
+    margin-left: 1.5vw;
+    margin-right: 1vw;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  .jenisnyaa {
+    margin-right: 20vw;
+  }
+  .cod,
+  .paypal,
+  .gopay,
+  .dana {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 30px;
+    gap: 10px;
+  }
+  .cod:hover {
+    cursor: pointer;
+    border-radius: 6px;
+    outline: 1px solid #4b4ced;
+    width: 100px;
+    height: 30px;
+    color: #4b4ced;
+  }
+  .paypal:hover {
+    cursor: pointer;
+    border-radius: 6px;
+    outline: 1px solid #4b4ced;
+    width: 100px;
+    height: 30px;
+    color: #4b4ced;
+  }
+  .gopay:hover {
+    cursor: pointer;
+    border-radius: 6px;
+    outline: 1px solid #4b4ced;
+    width: 100px;
+    height: 30px;
+    color: #4b4ced;
+  }
+  .dana:hover {
+    cursor: pointer;
+    border-radius: 6px;
+    outline: 1px solid #4b4ced;
+    width: 100px;
+    height: 30px;
+    color: #4b4ced;
+  }
+  .metode-pembayaran {
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    bottom: 70px;
+    height: 40px;
+    background-color: white;
+    margin-top: 10px;
+  }
+  .isi-metode {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    gap: 5px;
+  }
+  #COD {
+    margin-left: 50vw;
+    color: gray;
+  }
+  .jasa-pengiriman {
+    margin-top: 10px;
+    width: 96vw;
+    margin-left: 1.5vw;
+    margin-right: 1vw;
+    height: 100px;
+    background-color: white;
+  }
+  .title-jasa-pengiriman {
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .body-jasa-pengiriman {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .harga-ongkir {
+    display: flex;
+    gap: 10px;
+    margin-left: 18px;
+  }
+  .total-pesanan {
+    position: fixed;
+   left: 0;
+    bottom: 0;
+    width: 100vw;
+    background-color: #fff;
+  }
+  .body-total-pesanan {
+    margin-left: 10px;
+    height: 60px;
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+  
+  }
+  #jumlah-total-pesanan {
+    font-weight: normal;
+    color: gray;
+  }
+  .harga-totalnya {
+    position: fixed;
+    display: flex;
+    margin-left: 63vw;
+    align-items: center;
+    gap: 15px;
+  }
+  .jumlah-semuanya {
+    color: #4b4ced;
+  }
+  .beli-sekarangnya {
+    width: 15vw;
+    height: 45px;
+    position: fixed;
+    right: 10px;
+    bottom: 8px;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    background-color: #4b4ced;
+    border-radius: 30px;
+    font-weight: normal;
+  }
+}
+@media screen and (max-width: 767px) {
+  body{
+    height: 110vh;
+    width: 80vw;
+  }
+  .navbar-belilangsung {
+    position: fixed;
+    width: 100vw;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: #4b4ced;
+    font-weight: bold;
+  }
+  .icon-kembali-co {
+    margin-left: 2vw;
+    color: #4b4ced;
+  }
+  .title-checkout {
+    margin-left: 10px;
+  }
+  .lokasi-penerima {
+    width: 93.2vw;
+    margin-left: 1.5vw;
+    margin-top: 60px;
+    height: 150px;
+    background-color: white;
+  }
+  .isi-lokasi {
+    width: 83vw;
+    height: 150px;
+    margin-left:10px;
+  }
+  .tile-lokasi {
+    gap: 5px;
+    font-size: 16px;
+    width: 89vw;
+    color: #4b4ced;
+    font-weight: bold;
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+  .nama-telepon {
+    font-size: 12px;
+    display: flex;
+    width: 89vw;
+    gap: 5px;
+  }
+  .alamat {
+    width: 89vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+    font-size: 12px;
+  }
+  .jalan-RT-RW {
+    display: flex;
+  }
+  .ini-produknya {
+    width: 93.2vw;
+    margin-left: 1.5vw;
+    height: 180px;
+    background-color: white;
+    margin-top: 10px;
+  }
+  .isinya {
+    display: flex;
+    align-items: center;
+    height: 180px;
+    width: 93.2vw;
+    font-size: 14px
+  }#gambar-produk {
+    width: 100px;
+    height: 100px;
+  }
+  #deksripsi-nya{
+    margin-left: 10px;
+  }
+  #nama-produk {
+    margin-left: 10px;
+    font-size: 16px;
+    color: #4b4ced;
+    font-weight: bold;
+  }
+  .harga-nya {
+    margin-left: 10px;
+    display: flex;
+    gap: 5px;
+  }
+  #harga-asli {
+    color: #4b4ced;
+  }
+  .list-metode-pembayaran {
+    width: 93.2vw;
+    margin-left: 1.5vw;
+    height: 60px;
+    background-color: white;
+    margin-top: 10px;
+  }
+  .isi-list {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+  }
+
+  .cod,
+  .paypal,
+  .gopay,
+  .dana {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 30px;
+    gap: 5px;
+    font-size: 10px;
+  }
+  .cod:hover {
+    cursor: pointer;
+    border-radius: 6px;
+    outline: 1px solid #4b4ced;
+    width: 60px;
+    height: 30px;
+    color: #4b4ced;
+  }
+  .paypal:hover {
+    cursor: pointer;
+    border-radius: 6px;
+    outline: 1px solid #4b4ced;
+    width: 60px;
+    height: 30px;
+    color: #4b4ced;
+  }
+  .gopay:hover {
+    cursor: pointer;
+    border-radius: 6px;
+    outline: 1px solid #4b4ced;
+    width: 60px;
+    height: 30px;
+    color: #4b4ced;
+  }
+  .dana:hover {
+    cursor: pointer;
+    border-radius: 6px;
+    outline: 1px solid #4b4ced;
+    width: 60px;
+    height: 30px;
+    color: #4b4ced;
+  }
+  .metode-pembayaran {
+    width: 100vw;
+    height: 50px;
+    background-color: white;
+    position: fixed;
+    bottom: 63px;
+  }
+  .isi-metode {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    width: 70em;
+    gap: 5px;
+    font-size: 12px;
+  }
+  #COD {
+   position: fixed;
+   right: 50px;
+    color: gray;
+    font-size: 10px;
+  }
+  .jasa-pengiriman {
+    margin-top: 10px;
+    width: 93.2vw;
+    margin-left: 1.5vw;
+    height: 100px;
+    background-color: white;
+  }
+  .title-jasa-pengiriman {
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .body-jasa-pengiriman {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .harga-ongkir {
+    display: flex;
+    gap: 5px;
+    margin-left: 18px;
+  }
+  .total-pesanan {
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+  }
+  .body-total-pesanan {
+
+    width: 96vw;
+    margin-left: 1.5vw;
+    margin-right: 1vw;
+    height: 55px;
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+  
+  }
+  #jumlah-total-pesanan {
+    font-weight: normal;
+    color: gray;
+  }
+  .harga-totalnya {
+    display: flex;
+    position: fixed;
+    right: 150px;
+    align-items: center;
+    gap: 5px;
+  }
+  .jumlah-semuanya {
+    color: #4b4ced;
+  }
+  .beli-sekarangnya {
+    position: fixed;
+    bottom: 6px;
+    width: 120px;
+    height: 45px;
+    background-color: #4b4ced;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    font-weight: normal;
+    font-size: 12px;
+  }
+}
+

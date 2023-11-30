@@ -1,0 +1,258 @@
+* {
+	margin: 0;
+	padding: 0;
+    font-weight: 900;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    height: auto;
+    width: auto;
+    background-image: url(/public/img/forest-bg.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+#wrapper{
+    background-color: rgba(255, 255, 255, 0.322);    
+    margin: 15vh 0px 0px 50vw ;
+    height: 30em;
+    width: 25em;   
+    box-shadow: 0px 0px 20px 0px #000000;
+    border-radius: 10px;
+}
+
+#wrapper:hover{
+   background-color: rgba(255, 255, 255, 0.733);
+}
+.wrapper {
+    margin-top: -460px;
+
+}
+.logo-box {
+    margin: -50px 0px 0px -25em;
+    padding: auto;
+    height: 30em;
+    width: 25em;
+    background-color: rgba(0, 0, 0, 0.322);
+    box-shadow: 0px 0px 10px 0px #000000;
+    border-radius: 10px;
+
+}
+.logo-box img {
+    margin-top: -25px;
+    margin-left: -50px;
+}
+.navbar {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    
+}
+.nav {
+    margin-left: 20px;
+    width: 5em;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.form-login .login {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    
+} 
+
+.form-login .signup{
+    font-size: 1.5rem;
+    background-color: transparent;
+    outline: none;
+    border: none;  
+    margin-left: 5em;
+    color: rgb(37, 103, 189);
+    text-decoration: none;
+}
+.login-box p {
+    margin: -20px 0px 10px 100px;
+    color: red;
+}
+
+.form-field {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}  
+.form-field span {
+    font-size: 1.2rem;
+    width: 30px;
+    margin-bottom: 1.5em;
+}
+.form-field input {
+    padding-left: 15px ;
+    height: 2em;
+    width: 20em;
+    display: block;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1rem;
+    color: #1f1e1e;
+    box-shadow: inset 0px -3px 0px -0px #0000001c;
+    margin-bottom: 2em ;
+}
+.form-field i {
+    font-size: 1.3rem;
+    background-color: transparent;
+    margin-left: 15.5em;
+    position: absolute;
+    padding: 4px;
+    margin-bottom: 2em;
+}   
+.form-field input:focus {
+    
+    box-shadow: inset 0px -3px 0px -0px #000000;
+
+}
+
+.login-box a {
+
+    margin-left: 15em;
+    color: #000000;
+    text-decoration: none;
+    font-size: 1rem;
+
+}
+.ping {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ping a {
+    font-size: 1rem;
+    text-decoration: underline;
+    margin-left: 10px;
+    color: #196b80;
+    margin-top: -1px;
+}
+
+/* add fitur */
+.login, .signup, .ping {
+    cursor: pointer;
+}
+.error {
+    margin-top: -20px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    width: 300px;
+    color: rgba(255, 0, 0, 0.76);
+    font-size: 1em;
+    
+}
+.add {
+    text-decoration: none;
+    color: #000000;
+}
+.submit-button button{
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: rgb(97, 205, 255);
+    padding: 15px;
+    width: 28.5em;
+    margin: 10px;
+    margin-top: 30px;
+
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* mobile phone responsive */
+@media screen and (max-width: 980px) {
+    body {
+        height: 70vh;
+        width: 80vw;
+        background-image:none;
+        
+    }
+    .logo-box {
+        display: none;
+    }
+    #wrapper{
+        background-color: rgba(255, 255, 255, 0.322);    
+        margin: auto;
+        width: 100vw;   
+        box-shadow:none;
+        border-radius: 10px;
+    }
+    .wrapper {
+        margin-top: 50px;
+        
+    }
+    .navbar {
+        font-size: 2rem;
+        margin-top: 10px;
+        
+    }
+    .nav {
+        margin-left: 2em;
+        width: 7em;
+        margin-bottom: 20px;
+    }
+    .form-login .signup {
+        font-size: 2rem;
+        margin-left: 50vw;
+     
+    }
+    .login-box {
+        margin-top: 3em;
+        margin-left: 5vw;
+    }
+    .login-box a {
+        margin-left: 68vw;
+        font-size: 1.3rem;
+    }
+    .form-field span {
+        width: 55px;
+        font-size: 2rem;
+    }
+    .form-field input {
+        letter-spacing: 2px;
+        width: 80vw;
+        height: 3em;
+        box-shadow: inset 0px -2px 0px -0px #0000001c;
+        font-size: 1.5rem;
+    }
+    .form-field i {
+        margin-left: 82vw;
+        font-size: 2rem;
+    }   
+    .submit-button button{
+        width: 88.5vw;
+        font-size: 2rem;
+        margin-top: 40px;
+    }
+    .form-field input:focus {
+        
+        box-shadow: inset 0px -2px 0px -1px #000000;
+    }
+    .ping {
+        font-size: 1.3rem;   
+    }
+    .ping a {
+        margin-left: 10px;
+    }
+    .error {
+        margin-top: -20px;
+        margin-bottom: 15px;
+        margin-left: 50px;
+        width: 600px;
+        color: rgba(255, 0, 0, 0.76);
+        font-size: 2em;
+        
+    }
+}
