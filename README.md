@@ -16,3 +16,4 @@ Teknik Komputer dan Jaringan 3
 - Database : Mysql
 - Domain : Domainesia.com
 - Hosting : Infinityfree.com
+- Desain : Figma
